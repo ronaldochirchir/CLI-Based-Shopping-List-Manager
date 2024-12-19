@@ -1,0 +1,163 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c4c4dd;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #eeebeb;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increased shadow for the container */
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease; /* Added smooth shadow transition */
+}
+
+.container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.966); /* Hover shadow effect */
+}
+
+h1 {
+    text-align: center;
+    color: #117414;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#shopping-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#shopping-list li {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(57, 85, 6, 0.658);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added smooth shadow transition */
+}
+
+#shopping-list li:hover {
+    background-color: #ccc4d6; /* Subtle hover background change */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Hover shadow effect for list items */
+}
+
+.bought {
+    text-decoration: line-through;
+    color: rgb(2, 2, 2);
+}
+
+/* Buttons */
+button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Added shadow transition */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Default shadow for buttons */
+}
+
+button:hover {
+    opacity: 0.9;
+    box-shadow: 0 4px 8px rgba(10, 10, 10, 0.2); /* Hover shadow for buttons */
+}
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+    box-shadow: none; /* No shadow for disabled buttons */
+}
+
+button.mark-bought {
+    background-color: #39d31365;
+    margin-right: 10px;
+}
+
+button.remove-item {
+    background-color: hwb(6 9% 4%);
+}
+
+button.add-item {
+    background-color: #33a2f1;
+}
+
+button.mark-bought:hover {
+    background-color: #255823;
+}
+
+button.remove-item:hover {
+    background-color: #c0392b;
+}
+
+button.add-item:hover {
+    background-color: #3308f3;
+}
+
+/* Add Item Section */
+.add-item-section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.add-item-section input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+/* Clear List Button */
+.clear-list-button {
+    background-color: #7d3191;
+    color: rgba(255, 255, 255, 0.952);
+    padding: 8px 16px; /* Reduced padding */
+    border-radius: 5px;
+    margin: 15px 0; /* Reduced margin */
+    display: block;
+    width: auto; /* Auto width to fit content */
+    font-size: 1rem; /* Slightly smaller font size */
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0); /* Default shadow */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.clear-list-button:hover {
+    background-color: #d32f2f;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hover shadow */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .add-item-section {
+        flex-direction: column;
+    }
+
+    .add-item-section input {
+        width: 100%;
+    }
+}
