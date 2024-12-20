@@ -83,6 +83,14 @@ To view a live version of this application, simply open the index.html file in y
 ## License Information
 This project is open-source and licensed under the **MIT License.
 
+ ## Contribution Guidelines
+We encourage you to contribute! If you'd like to suggest improvements or add new features, feel free to fork the project and submit a pull request. Your contributions are always welcome.
+
+
+  ## Contact
+. **Phone number**: +254 727 057 056
+
+. **Email**: ronaldochirchir8@gmail.com
 
 
 
